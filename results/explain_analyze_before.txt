@@ -1,0 +1,5 @@
+EXPLAIN ANALYZE for: SELECT * FROM customers WHERE customerName = 'Land of Toys Inc.';
+-> Execution time: 0.120 sec
+-> Rows examined: 122
+-> Rows returned: 1
+Notes: Full table scan (type=ALL)
