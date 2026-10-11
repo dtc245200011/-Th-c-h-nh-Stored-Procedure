@@ -1,0 +1,29 @@
+-- CALL findAllCustomers();
+(customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1)
+103, Atelier graphique, Schmitt, Carine, 40.32.2555, 54, rue Royale
+112, Signal Gift Stores, King, Jean, 7025551838, 8489 Strong St.
+114, Australian Collectors, Co., Ferguson, Peter, 03 9520 4555, 636 St Kilda Road
+...
+175, Gift Depot Inc., King, Julie, 2035552570, 25593 South Bay Ln.
+
+-- CALL findCustomerByName('Land of Toys Inc.');
+customerNumber | customerName         | contactLastName | contactFirstName | phone       | addressLine1
+131            | Land of Toys Inc.    | Lee             | Kwai             | 2125557818  | 897 Long Airport Avenue
+
+-- CALL countCustomersByCountry('USA', @cnt);
+-- After call:
+SELECT @cnt AS customers_in_USA;
+customers_in_USA
+5
+
+-- INOUT example for updateCustomerPhone
+SET @phone = '999-999-9999';
+CALL updateCustomerPhone(175, @phone);
+SELECT @phone AS updated_phone;
+updated_phone
+999-999-9999
+
+-- CALL listCustomersByLastName('King');
+customerNumber
+112
+175
