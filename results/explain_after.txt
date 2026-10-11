@@ -1,0 +1,12 @@
+id: 1
+select_type: SIMPLE
+table: customers
+partitions: NULL
+type: ref
+possible_keys: idx_customerName
+key: idx_customerName
+key_len: 52
+ref: const
+rows: 1
+filtered: 100.00
+Extra: NULL
