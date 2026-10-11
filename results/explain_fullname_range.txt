@@ -1,0 +1,12 @@
+id: 1
+select_type: SIMPLE
+table: customers
+partitions: NULL
+type: range
+possible_keys: idx_full_name
+key: idx_full_name
+key_len: 52
+ref: NULL
+rows: 3
+filtered: 100.00
+Extra: Using index condition
