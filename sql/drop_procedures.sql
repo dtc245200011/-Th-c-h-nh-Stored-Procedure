@@ -1,0 +1,5 @@
+DROP PROCEDURE IF EXISTS findAllCustomers;
+DROP PROCEDURE IF EXISTS findCustomerByName;
+DROP PROCEDURE IF EXISTS countCustomersByCountry;
+DROP PROCEDURE IF EXISTS updateCustomerPhone;
+DROP PROCEDURE IF EXISTS listCustomersByLastName;
