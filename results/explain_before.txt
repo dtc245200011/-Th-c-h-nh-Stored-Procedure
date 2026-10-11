@@ -1,0 +1,12 @@
+id: 1
+select_type: SIMPLE
+table: customers
+partitions: NULL
+type: ALL
+possible_keys: NULL
+key: NULL
+key_len: NULL
+ref: NULL
+rows: 122
+filtered: 10.00
+Extra: Using where
