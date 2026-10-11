@@ -1,0 +1,5 @@
+EXPLAIN ANALYZE for: SELECT * FROM customers WHERE customerName = 'Land of Toys Inc.';
+-> Execution time: 0.002 sec
+-> Rows examined: 1
+-> Rows returned: 1
+Notes: Index lookup using idx_customerName (type=ref)
